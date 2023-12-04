@@ -14,6 +14,9 @@ public class Main {
         // Можно дописать проверку в devide и в случае деления на 0 вернуть 0
         int c = calc.devide.apply(a, b);
 
-        calc.println.accept(c);
+        // Второй вариант решения - использовать проверку
+        if (calc.isPositive.test(b)) {
+            calc.println.accept(c);
+        }
     }
 }
